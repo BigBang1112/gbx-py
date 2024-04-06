@@ -1352,16 +1352,14 @@ body_chunks[0x0315C001] = Struct(
 
 # 04001 GxLight
 
-body_chunks[0x400100A] = Struct(
+body_chunks[0x0400100A] = Struct(
     "version" / Int32ul,  # 0
-    "u01" / GbxFloat,
-    "u02" / GbxFloat,
-    "u03" / GbxFloat,
+    "color" / GbxVec3,
     "u04" / Int32sl,
-    "u05" / GbxFloat,
+    "intensity" / GbxFloat,
     "u06" / GbxFloat,
-    "u07" / GbxFloat,
-    "u08" / GbxFloat,
+    "shadowIntensity" / GbxFloat,
+    "flareIntensity" / GbxFloat,
     "u09" / GbxVec3,
 )
 
